@@ -14,10 +14,10 @@ func test(c complex128, depth int) bool {
 	return true
 }
 func Mbi(x float64, y float64, scale float64) bool {
-	x = x - (scale / 2)
-	y = y - (scale / 2)
-	x = x * (1 / scale)
-	y = y * (1 / scale)
+	x = x / scale
+	y = y / scale
+	x = x - 0.5
+	y = y - 0/5
 
 	return test(complex(x, y), 10)
 }
