@@ -19,5 +19,5 @@ func Mbi(x float64, y float64, scale float64) bool {
 	x = x - 0.5
 	y = y - 0/5
 
-	return test(complex(x, y), 10)
+	return test(complex(x, y), 500)
 }
